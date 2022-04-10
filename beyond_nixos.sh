@@ -35,7 +35,8 @@ sudo apt install --yes git
 ##git-lfs\
 sudo apt install --yes wine
 sudo apt install --yes gcc
-sudo apt install --yes python39
+sudo apt install --yes python3
+sudo apt install --yes ipython3
 sudo apt install --yes jupyter
 ##python39Packages.ipykernel\
 sudo apt install --yes etcher
@@ -95,15 +96,3 @@ sudo apt install --yes sane
 ##	--uid 1999 --home-dir /home/art/ art
 
 ##sudo service NetworkManager restart
-
-
-##	environment.variables.EDITOR = "vi";
-##	environment.variables.SUDO_EDITOR = "vi";
-##	#### $SUDO_EDITOR - man of sudo says that it uses SUDO_EDITOR, VISUAL, EDITOR
-##	####	 variables (in that order). EDITOR is defined, but for some reason,
-##	####	 `sudo nixos-rebuild` still opens nano
-##	####			 ****it still opens with nano
-##	environment.variables.CURRENT_PROJECT="/media/terrobyte/dev_2021-11nov-21/python/Python_для_сложных_задач_(Дж._Вандер_Плас) (1)/";
-##	environment.variables.ENCYCLOPEDIA="/media/terrobyte/dev_2021-08aug-10/c#-2021_08aug_10/Troelsen_yasik-programmirovaniya-csharp-7/MySummary-2021_08aug_10/dotnetCoreVersion-you_created_changelog-work_here/";
-##	environment.variables.NIXPKGS_ALLOW_UNFREE = "1";
-##	environment.variables.GITHUB_TOKEN = "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";

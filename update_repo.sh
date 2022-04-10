@@ -13,3 +13,4 @@ git add /etc/X11/xorg.conf.d/00-keyboard.conf
 git add /etc/X11/xorg.conf.d/40-libinput.conf
 git add /etc/ipython/
 git add /etc/jupyter/
+git add /etc/environment
