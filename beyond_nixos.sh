@@ -103,7 +103,9 @@
 	####	User should be placed to `scanner` and `lp` groups to be able to
 	####		scan
 	####
-	sudo apt install adwaita-icon-theme-full
+	sudo apt install --yes adwaita-icon-theme-full
+	sudo apt install --yes python3-venv
+	##sudo apt install --yes 
 
 
 ####For Debian or NixOS
