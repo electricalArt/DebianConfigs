@@ -11,6 +11,7 @@
 	##sudo chmod -R 777 ./beyond_nixos.sh
 	##sudo chmod -R 777 ./update_repo.sh
 	##sudo chmod -R 777 ./.git/
+	sudo chown -R art /etc/ipython/
 
 ####Users
 	##sudo useradd --groups\
