@@ -11,7 +11,7 @@
 	##sudo chmod -R 777 ./beyond_nixos.sh
 	##sudo chmod -R 777 ./update_repo.sh
 	##sudo chmod -R 777 ./.git/
-	sudo chown -R art /etc/ipython/
+	##sudo chown -R art /etc/ipython/
 
 ####Users
 	##sudo useradd --groups\
@@ -67,16 +67,13 @@
 	##sudo apt install --yes anydesk
 	##gnome.gnome-notes\
 	####Brave
-		sudo apt install apt-transport-https curl
-		
-		sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg\
-				https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-		
-		echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-		
-		sudo apt update
-		
-		sudo apt install --yes brave-browser
+		##sudo apt install apt-transport-https curl
+		##sudo curl -fsSLo \
+		##	/usr/share/keyrings/brave-browser-archive-keyring.gpg \
+		##	https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+		##echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+		##sudo apt update
+		##sudo apt install --yes brave-browser
 	##sudo apt install --yes whatsapp-for-linux
 	##sudo apt install --yes playerctl
 	####playerctl --- with this great utility you can control\
@@ -106,6 +103,15 @@
 	####
 	sudo apt install --yes adwaita-icon-theme-full
 	sudo apt install --yes python3-venv
+	####Anydesk
+		wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | \
+			apt-key add -
+		echo "deb http://deb.anydesk.com/ all main" > \
+			/etc/apt/sources.list.d/anydesk-stable.list
+		sudo apt update
+		sudo apt install --yes anydesk libpangox-1.0-dev
+		####libpangox-...-dev --- it's also needed, but for some reason
+		####	it isn't installed with anydesk
 	##sudo apt install --yes 
 
 
@@ -121,6 +127,9 @@
 	##git-lfs\
 	##python39Packages.ipykernel\
 	##sudo apt install --yes xorg.libxcb
+	##sudo apt install --yes exfat-utils
+	##sudo apt install --yes python3-tk
+	##sudo apt install --yes 
 
 
 ####Unity
