@@ -129,6 +129,7 @@
 	##sudo apt install --yes xorg.libxcb
 	##sudo apt install --yes exfat-utils
 	##sudo apt install --yes python3-tk
+	##sudo apt install --yes build-essential
 	##sudo apt install --yes 
 
 
