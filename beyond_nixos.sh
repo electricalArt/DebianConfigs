@@ -25,46 +25,48 @@
 
 
 ####For Ubuntu
-	##sudo apt update
+	sudo apt update
 	##sudo apt install --yes xterm
-	##sudo apt install --yes neofetch
+	sudo snap install alacritty --classic
+	sudo snap install powershell --classic
+	sudo apt install --yes neofetch
 	##sudo apt install --yes tmux
-	##sudo apt install --yes zip
-	##sudo apt install --yes unzip
-	##sudo apt install --yes lm_sensors
-	##sudo apt install --yes exfat
-	##sudo apt install --yes ntfs3g
-	##sudo apt install --yes pciutils
-	##sudo apt install --yes usbutils
-	##sudo apt install --yes acpi
+	sudo apt install --yes zip
+	sudo apt install --yes unzip
+	sudo apt install --yes lm_sensors
+	sudo apt install --yes exfat
+	sudo apt install --yes ntfs3g
+	sudo apt install --yes pciutils
+	sudo apt install --yes usbutils
+	sudo apt install --yes acpi
 	####acpi --- it's util for battary controle
-	##sudo apt install --yes unrar
-	##sudo apt install --yes xdotool
+	sudo apt install --yes unrar
+	sudo apt install --yes xdotool
 	####xdotool --- util to manipulate of X windows\
-	##sudo apt install --yes dotnet-sdk
-	##sudo apt install --yes git
-	##sudo apt install --yes wine
-	##sudo apt install --yes gcc
-	##sudo apt install --yes python3
+	sudo apt install --yes dotnet-sdk
+	sudo apt install --yes git
+	sudo apt install --yes wine
+	sudo apt install --yes gcc
+	sudo apt install --yes python3
 	##sudo apt install --yes ipython3
 	##sudo apt install --yes jupyter
-	##sudo apt install --yes etcher
-	##sudo apt install --yes vscode
+	sudo apt install --yes etcher
+	sudo apt install --yes vscode
 	####code - it has different name actually\
 	####vscode - yeah, exactly this name\
 	####	##sudo apt install --yes vscode-with-extensions
 	##opera\
-	##sudo apt install --yes vlc
+	sudo apt install --yes vlc
 	##steam\
 	##dconf-editor\
-	##sudo apt install --yes hardinfo
+	sudo apt install --yes hardinfo
 	##sudo apt install --yes discord
 	##sudo apt install --yes libreoffice
-	##sudo apt install --yes qbittorrent
+	sudo apt install --yes qbittorrent
 	##teamviewer\
 	##sudo apt install --yes calibre
 	##sudo apt install --yes zoom-us
-	##sudo apt install --yes anydesk
+	sudo apt install --yes anydesk
 	##gnome.gnome-notes\
 	####Brave
 		##sudo apt install apt-transport-https curl
@@ -75,10 +77,10 @@
 		##sudo apt update
 		##sudo apt install --yes brave-browser
 	##sudo apt install --yes whatsapp-for-linux
-	##sudo apt install --yes playerctl
+	sudo apt install --yes playerctl
 	####playerctl --- with this great utility you can control\
 	####	media with your wished buttons under any DE!\
-	##sudo apt install --yes nomacs
+	sudo apt install --yes nomacs
 	##sudo apt install --yes unciv
 	##sudo apt install --yes liberation_ttf_v1
 	####liveration_... --- it provides three sets:\
@@ -92,7 +94,7 @@
 	####	But, for some reason, only gnome-tweaks can list your\
 	####	available gnome themes\
 	##emacs-nox\
-	##sudo apt install --yes blueman
+	sudo apt install --yes blueman
 	####blueman --- it's for case, when your DE is not heavy enought to
 	####	have it's own GUI bluetooth tool
 	##sudo apt install --yes sane
@@ -101,15 +103,15 @@
 	####	User should be placed to `scanner` and `lp` groups to be able to
 	####		scan
 	####
-	sudo apt install --yes adwaita-icon-theme-full
-	sudo apt install --yes python3-venv
+	##sudo apt install --yes adwaita-icon-theme-full
+	##sudo apt install --yes python3-venv
 	####Anydesk
-		wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | \
-			apt-key add -
-		echo "deb http://deb.anydesk.com/ all main" > \
-			/etc/apt/sources.list.d/anydesk-stable.list
-		sudo apt update
-		sudo apt install --yes anydesk libpangox-1.0-dev
+		##wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | \
+		##	apt-key add -
+		##echo "deb http://deb.anydesk.com/ all main" > \
+		##	/etc/apt/sources.list.d/anydesk-stable.list
+		##sudo apt update
+		##sudo apt install --yes anydesk libpangox-1.0-dev
 		####libpangox-...-dev --- it's also needed, but for some reason
 		####	it isn't installed with anydesk
 	##sudo apt install --yes 
@@ -118,11 +120,13 @@
 ####For Debian or NixOS
 	##sudo apt install --yes mesa
 	##sudo apt install --yes lxqt
-	##sudo apt install --yes vim
+	sudo apt install --yes adwaita-icon-theme-full
+	sudo apt install --yes vim
 	##sudo apt install --yes bootiso
-	##sudo apt install --yes binutils
+	sudo apt install --yes binutils
 	####binutils --- it's some binaries manipulating utils (linker, ar,\
 	####	assembler, etc.)\
+	sudo apt install --yes make
 	##newpkgs.mesa\
 	##git-lfs\
 	##python39Packages.ipykernel\
