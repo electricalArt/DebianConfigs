@@ -8,15 +8,15 @@
 
 
 ####You stuff
-	##sudo chmod -R 777 ./beyond_nixos.sh
-	##sudo chmod -R 777 ./update_repo.sh
-	##sudo chmod -R 777 ./.git/
-	##sudo chown -R art /etc/ipython/
+	sudo chmod -R 777 ./beyond_nixos.sh
+	sudo chmod -R 777 ./update_repo.sh
+	sudo chmod -R 777 ./.git/
+	sudo chown -R art /etc/ipython/
 
 ####Users
-	##sudo useradd --groups\
-    ##   		wheel,sudo,sound,networkmanager,pulse,audio,scanner,lp\
-	##	--uid 1999 --home-dir /home/art/ art
+	sudo useradd --groups\
+       		wheel,sudo,sound,networkmanager,pulse,audio,scanner,lp\
+		--uid 1999 --home-dir /home/art/ art
 	##mkdir ~/dev/
 
 
@@ -26,9 +26,21 @@
 
 ####For Ubuntu
 	sudo apt update
-	##sudo apt install --yes xterm
-	sudo snap install alacritty --classic
-	sudo snap install powershell --classic
+	sudo apt install --yes xterm
+
+	##alacritty
+		sudo add-apt-repository --yes ppa:aslatter/ppa
+		sudo apt install alacritty
+
+	##powershell
+		cd /tmp/
+		wget https://github.com/PowerShell/PowerShell/releases/download/v7.2.7/powershell-lts_7.2.7-1.deb_amd64.deb
+		sudo apt install ./powershell-lts_7.2.7-1.deb_amd64.deb
+		cd /
+
+        ##powershell modules
+        Install-Module -Name "Send-MagicPacket" -Force
+
 	sudo apt install --yes neofetch
 	##sudo apt install --yes tmux
 	sudo apt install --yes zip
@@ -43,6 +55,7 @@
 	sudo apt install --yes unrar
 	sudo apt install --yes xdotool
 	####xdotool --- util to manipulate of X windows\
+	sudo apt install --yes curl
 	sudo apt install --yes dotnet-sdk
 	sudo apt install --yes git
 	sudo apt install --yes wine
@@ -88,13 +101,13 @@
 	####	>	Serif - it's like Times New Roman, Thorndale, Nimbus\
 	####			Roman, ...\
 	####	>	Mono - it's like Courier New, Cumberland, Courier, ...\
-	##gnome.dconf-editor\
-	##gnome.gnome-tweaks\
+	sudo apt install --yes dconf-editor
+	sudo apt install --yes gnome-tweaks\
 	####gnome-tweaks - dconf can do everything that tweaks can.\
 	####	But, for some reason, only gnome-tweaks can list your\
 	####	available gnome themes\
 	##emacs-nox\
-	sudo apt install --yes blueman
+	##sudo apt install --yes blueman
 	####blueman --- it's for case, when your DE is not heavy enought to
 	####	have it's own GUI bluetooth tool
 	##sudo apt install --yes sane
@@ -122,7 +135,7 @@
 	##sudo apt install --yes lxqt
 	sudo apt install --yes adwaita-icon-theme-full
 	sudo apt install --yes vim
-	##sudo apt install --yes bootiso
+	sudo apt install --yes bootiso
 	sudo apt install --yes binutils
 	####binutils --- it's some binaries manipulating utils (linker, ar,\
 	####	assembler, etc.)\
