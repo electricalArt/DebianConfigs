@@ -26,7 +26,7 @@
 
 ####For Ubuntu
 	sudo apt update
-	sudo apt install --yes xterm
+	#sudo apt install --yes xterm
 
 	##alacritty
 		sudo add-apt-repository --yes ppa:aslatter/ppa
@@ -34,8 +34,8 @@
 
 	##powershell
 		cd /tmp/
-		wget https://github.com/PowerShell/PowerShell/releases/download/v7.2.7/powershell-lts_7.2.7-1.deb_amd64.deb
-		sudo apt install ./powershell-lts_7.2.7-1.deb_amd64.deb
+		wget https://github.com/PowerShell/PowerShell/releases/download/v7.4.5/powershell_7.4.5-1.deb_amd64.deb
+		sudo apt install ./powershell_7.4.5-1.deb_amd64.deb
 		cd /
 
         ##powershell modules
@@ -56,7 +56,7 @@
 	sudo apt install --yes xdotool
 	####xdotool --- util to manipulate of X windows\
 	sudo apt install --yes curl
-	sudo apt install --yes dotnet-sdk
+	#sudo apt install --yes dotnet-sdk
 	sudo apt install --yes git
 	sudo apt install --yes wine
 	sudo apt install --yes gcc
