@@ -35,7 +35,7 @@
 	##powershell
 		cd /tmp/
 		wget https://github.com/PowerShell/PowerShell/releases/download/v7.4.5/powershell_7.4.5-1.deb_amd64.deb
-		sudo apt install ./powershell_7.4.5-1.deb_amd64.deb
+		sudo dpkg --install --ignore-depends=libicu72 ./powershell_7.4.5-1.deb_amd64.deb
 		cd /
 
         ##powershell modules
