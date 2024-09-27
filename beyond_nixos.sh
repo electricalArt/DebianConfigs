@@ -34,8 +34,15 @@
 
 	##powershell
 		cd /tmp/
+
+		# Installing dependency of powershell
+		wget http://launchpadlibrarian.net/687376874/libicu72_72.1-3ubuntu3_amd64.deb
+		sudo dpkg --install ./libicu72_72.1-3ubuntu3_amd64.deb
+
+		# Installing powershell
 		wget https://github.com/PowerShell/PowerShell/releases/download/v7.4.5/powershell_7.4.5-1.deb_amd64.deb
-		sudo dpkg --install --ignore-depends=libicu72 ./powershell_7.4.5-1.deb_amd64.deb
+		sudo dpkg --install ./powershell_7.4.5-1.deb_amd64.deb
+
 		cd /
 
         ##powershell modules
@@ -88,7 +95,6 @@
 			https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 		echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 		sudo apt update
-		sudo apt --fix-broken install  # Can fix a possible problem
 		sudo apt install --yes brave-browser
 	##sudo apt install --yes whatsapp-for-linux
 	sudo apt install --yes playerctl
